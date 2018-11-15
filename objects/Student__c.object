@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Department__c</fullName>
+        <defaultValue>&quot;0&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <length>250</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Education_Cost__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Education Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Scholarship_Value__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Scholarship Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Specialty__c</fullName>
+        <externalId>false</externalId>
+        <label>Specialty</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>E-marketing</fullName>
+                    <default>false</default>
+                    <label>E-marketing</label>
+                </value>
+                <value>
+                    <fullName> Accounting analysis and audit</fullName>
+                    <default>false</default>
+                    <label> Accounting analysis and audit</label>
+                </value>
+                <value>
+                    <fullName> Information systems and technologies (in economics)</fullName>
+                    <default>false</default>
+                    <label> Information systems and technologies (in economics)</label>
+                </value>
+                <value>
+                    <fullName> Finance and credit</fullName>
+                    <default>false</default>
+                    <label> Finance and credit</label>
+                </value>
+                <value>
+                    <fullName> Economics and enterprise management</fullName>
+                    <default>false</default>
+                    <label> Economics and enterprise management</label>
+                </value>
+                <value>
+                    <fullName> Belarusian philology</fullName>
+                    <default>false</default>
+                    <label> Belarusian philology</label>
+                </value>
+                <value>
+                    <fullName> Russian philology</fullName>
+                    <default>false</default>
+                    <label> Russian philology</label>
+                </value>
+                <value>
+                    <fullName> Daytime</fullName>
+                    <default>false</default>
+                    <label> Daytime</label>
+                </value>
+                <value>
+                    <fullName> Romano-Germanic Philology (German)</fullName>
+                    <default>false</default>
+                    <label> Romano-Germanic Philology (German)</label>
+                </value>
+                <value>
+                    <fullName> Romano-Germanic Philology (English)</fullName>
+                    <default>false</default>
+                    <label> Romano-Germanic Philology (English)</label>
+                </value>
+                <value>
+                    <fullName> Information and measuring equipment</fullName>
+                    <default>false</default>
+                    <label> Information and measuring equipment</label>
+                </value>
+                <value>
+                    <fullName> Technical operation of power equipment organizations</fullName>
+                    <default>false</default>
+                    <label> Technical operation of power equipment organizations</label>
+                </value>
+                <value>
+                    <fullName> Physics (production)</fullName>
+                    <default>false</default>
+                    <label> Physics (production)</label>
+                </value>
+                <value>
+                    <fullName> Physics (scientific and educational activities)</fullName>
+                    <default>false</default>
+                    <label> Physics (scientific and educational activities)</label>
+                </value>
+                <value>
+                    <fullName> Computer security (mathematical methods and software systems)</fullName>
+                    <default>false</default>
+                    <label> Computer security (mathematical methods and software systems)</label>
+                </value>
+                <value>
+                    <fullName> Mathematics (scientific and pedagogical activity)</fullName>
+                    <default>false</default>
+                    <label> Mathematics (scientific and pedagogical activity)</label>
+                </value>
+                <value>
+                    <fullName> Applied Mathematics (research and production activities)</fullName>
+                    <default>false</default>
+                    <label> Applied Mathematics (research and production activities)</label>
+                </value>
+                <value>
+                    <fullName> Information Technology Software</fullName>
+                    <default>false</default>
+                    <label> Information Technology Software</label>
+                </value>
+                <value>
+                    <fullName> Information Resource Management</fullName>
+                    <default>false</default>
+                    <label> Information Resource Management</label>
+                </value>
+                <value>
+                    <fullName> Biology (scientific and educational activities)</fullName>
+                    <default>false</default>
+                    <label> Biology (scientific and educational activities)</label>
+                </value>
+                <value>
+                    <fullName> Biology (biotechnology)</fullName>
+                    <default>false</default>
+                    <label> Biology (biotechnology)</label>
+                </value>
+                <value>
+                    <fullName> Bioecology</fullName>
+                    <default>false</default>
+                    <label> Bioecology</label>
+                </value>
+                <value>
+                    <fullName> History (domestic and universal)</fullName>
+                    <default>false</default>
+                    <label> History (domestic and universal)</label>
+                </value>
+                <value>
+                    <fullName> Information and communication</fullName>
+                    <default>false</default>
+                    <label> Information and communication</label>
+                </value>
+                <value>
+                    <fullName> Journalism</fullName>
+                    <default>false</default>
+                    <label> Journalism</label>
+                </value>
+                <value>
+                    <fullName> Linguistic support of intercultural communications</fullName>
+                    <default>false</default>
+                    <label> Linguistic support of intercultural communications</label>
+                </value>
+                <value>
+                    <fullName> Sociology</fullName>
+                    <default>false</default>
+                    <label> Sociology</label>
+                </value>
+                <value>
+                    <fullName> Tourism and Hospitality</fullName>
+                    <default>false</default>
+                    <label> Tourism and Hospitality</label>
+                </value>
+                <value>
+                    <fullName> Preschool education</fullName>
+                    <default>false</default>
+                    <label> Preschool education</label>
+                </value>
+                <value>
+                    <fullName> Speech therapy</fullName>
+                    <default>false</default>
+                    <label> Speech therapy</label>
+                </value>
+                <value>
+                    <fullName> Elementary education</fullName>
+                    <default>false</default>
+                    <label> Elementary education</label>
+                </value>
+                <value>
+                    <fullName> Oligophrenopedagogics</fullName>
+                    <default>false</default>
+                    <label> Oligophrenopedagogics</label>
+                </value>
+                <value>
+                    <fullName> Social work (social and psychological activities)</fullName>
+                    <default>false</default>
+                    <label> Social work (social and psychological activities)</label>
+                </value>
+                <value>
+                    <fullName> Social work (social rehabilitation activities)</fullName>
+                    <default>false</default>
+                    <label> Social work (social rehabilitation activities)</label>
+                </value>
+                <value>
+                    <fullName> Psychology</fullName>
+                    <default>false</default>
+                    <label> Psychology</label>
+                </value>
+                <value>
+                    <fullName> Practical psychology</fullName>
+                    <default>false</default>
+                    <label> Practical psychology</label>
+                </value>
+                <value>
+                    <fullName> International law</fullName>
+                    <default>false</default>
+                    <label> International law</label>
+                </value>
+                <value>
+                    <fullName> Jurisprudence</fullName>
+                    <default>false</default>
+                    <label> Jurisprudence</label>
+                </value>
+                <value>
+                    <fullName> Customs business</fullName>
+                    <default>false</default>
+                    <label> Customs business</label>
+                </value>
+                <value>
+                    <fullName> Economic law</fullName>
+                    <default>false</default>
+                    <label> Economic law</label>
+                </value>
+                <value>
+                    <fullName> Physical education</fullName>
+                    <default>false</default>
+                    <label> Physical education</label>
+                </value>
+                <value>
+                    <fullName> Musical art and world art culture</fullName>
+                    <default>false</default>
+                    <label> Musical art and world art culture</label>
+                </value>
+                <value>
+                    <fullName> Design (graphic)</fullName>
+                    <default>false</default>
+                    <label> Design (graphic)</label>
+                </value>
+                <value>
+                    <fullName> Design (suit and fabric)</fullName>
+                    <default>false</default>
+                    <label> Design (suit and fabric)</label>
+                </value>
+                <value>
+                    <fullName> Visual arts and computer graphics</fullName>
+                    <default>false</default>
+                    <label> Visual arts and computer graphics</label>
+                </value>
+                <value>
+                    <fullName> Folk art (instrumental music)</fullName>
+                    <default>false</default>
+                    <label> Folk art (instrumental music)</label>
+                </value>
+                <value>
+                    <fullName> Logistic support troops</fullName>
+                    <default>false</default>
+                    <label> Logistic support troops</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Student_group__c</fullName>
+        <externalId>false</externalId>
+        <label>Student group</label>
+        <referenceTo>Student_group__c</referenceTo>
+        <relationshipLabel>Students</relationshipLabel>
+        <relationshipName>Students</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Student</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Student Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Students</pluralLabel>
+    <recordTypes>
+        <fullName>Budget</fullName>
+        <active>true</active>
+        <label>Budget</label>
+        <picklistValues>
+            <picklist>Specialty__c</picklist>
+            <values>
+                <fullName>%C2%A0Accounting analysis and audit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Applied Mathematics %28research and production activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Belarusian philology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Bioecology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Biology %28biotechnology%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Biology %28scientific and educational activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Computer security %28mathematical methods and software systems%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Customs business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Daytime</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Design %28graphic%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Design %28suit and fabric%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Economic law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Economics and enterprise management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Elementary education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Finance and credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Folk art %28instrumental music%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0History %28domestic and universal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information Resource Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information Technology Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information and communication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information and measuring equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information systems and technologies %28in economics%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0International law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Journalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Jurisprudence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Linguistic support of intercultural communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Logistic support troops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Mathematics %28scientific and pedagogical activity%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Musical art and world art culture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Oligophrenopedagogics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Physical education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Physics %28production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Physics %28scientific and educational activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Practical psychology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Preschool education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Psychology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Romano-Germanic Philology %28English%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Romano-Germanic Philology %28German%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Russian philology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Social work %28social and psychological activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Social work %28social rehabilitation activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Sociology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Speech therapy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Technical operation of power equipment organizations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Tourism and Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Visual arts and computer graphics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Paid</fullName>
+        <active>true</active>
+        <label>Paid</label>
+        <picklistValues>
+            <picklist>Specialty__c</picklist>
+            <values>
+                <fullName>%C2%A0Accounting analysis and audit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Applied Mathematics %28research and production activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Belarusian philology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Bioecology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Biology %28biotechnology%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Biology %28scientific and educational activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Computer security %28mathematical methods and software systems%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Customs business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Daytime</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Design %28graphic%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Design %28suit and fabric%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Economic law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Economics and enterprise management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Elementary education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Finance and credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Folk art %28instrumental music%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0History %28domestic and universal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information Resource Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information Technology Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information and communication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information and measuring equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Information systems and technologies %28in economics%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0International law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Journalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Jurisprudence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Linguistic support of intercultural communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Logistic support troops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Mathematics %28scientific and pedagogical activity%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Musical art and world art culture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Oligophrenopedagogics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Physical education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Physics %28production%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Physics %28scientific and educational activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Practical psychology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Preschool education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Psychology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Romano-Germanic Philology %28English%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Romano-Germanic Philology %28German%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Russian philology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Social work %28social and psychological activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Social work %28social rehabilitation activities%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Sociology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Speech therapy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Technical operation of power equipment organizations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Tourism and Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%A0Visual arts and computer graphics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
